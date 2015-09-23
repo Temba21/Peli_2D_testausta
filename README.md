@@ -3,34 +3,34 @@
 
 
 
-# 1) Hahmotellaan pelin osa-alueet
+### 1) Hahmotellaan pelin osa-alueet
 - Mitä objekteja peli sisältää
 - Mitkä ovat pelin sisältämien objektien väliset suhteet
 - Mikä on pelin tavoite ja miten se saavutetaan
 - Tähän voi listata pienempiä haasteita matkalle
 
-# 2) Pelin mekaniikat:
+### 2) Sääntökirjaa
+
 - 9x9 kenttä
 - 2 Pelaajaa
 - 3-7 Valittavaa classia
-- Classeilla yheiset ja omat:
-
-Creaturet, spellit, muut jne.
-
-- Pelin tavoitteena kerätä korkeampi score kuin vastustajalla, joko hallitsemalla kukkulaa tai tappamalla creatureita
-
-# 3) Sääntökirjaa
-
 - Yhtäaikaiset vuorot, joissa molemmat pelaajat päättävät:
 - Creatureiden liikkeet
 - Spellien castaamisesta
 - Uusien creatureiden spawnaamisesta
-- 
 
-# 4) Vuoron rakenne
+### 3) Pelin mekaniikat:
 
+##### a) Classit:
 
-# 5) Creaturet:
+Jokaisella tietty määrä Slot:eja spelleille,creatureille, passiivisille kyvyille. Ideana taiteilu niukkuuden kanssa.
+
+- Creaturet
+- spellit
+- Passiiviset kyvyt
+
+##### b) Creaturet:
+
 - Attack
 - Health
 - Speed
@@ -38,5 +38,25 @@ Creaturet, spellit, muut jne.
 - Score Value
 - Erilaisia passiivisia/Aktivoitavia kykyjä
 
-# 6) Yritetään saada animaatio aikaiseksi
-# 7) Yritetään saada jokin äniefekti aikaiseksi
+
+##### c) Spellit
+
+- Efekti
+- Resurssimaksu
+- CastTime
+- Vaikutusalue
+- Rajattu tieto vastustajalle
+
+### 4) Vuoron rakenne
+
+- "Upkeep"
+- Molemmat pelaajat päättävät liikkeistään
+- Asiat tapahtuvat Step:ien perustella
+- Scoreboard päivittyy hallinnan perusteella
+
+
+### 5) Graafinen ilme / Musiikki
+
+- Jukalla on piirtopöytä ja kaksi kättä
+- Rocksmith voi taipua .rec musiikin nauhoittamiseen
+
