@@ -54,6 +54,13 @@ Jokaisella tietty määrä Slot:eja spelleille,creatureille, passiivisille kyvyi
 - Asiat tapahtuvat Step:ien perustella
 - Scoreboard päivittyy hallinnan perusteella
 
+##### a) Timer
+- Yhdellä vuorolla ei ole ns. miettimisaikaa
+- Pelin maksimikesto esim. 30 min
+- molemmilla pelaajoilla on miettimispuskuri esim. 10 min
+- kun Pelaaja 1 on "valmis", alkaa Pelaaja 2 kellosta vähentyä aika
+- jos puskurikello menee nollaan, häviää
+- yksi class voisi perustua vastustajan kellon ympärille, esim. spellit vähentävät tuota aikaa
 
 ### 5) Graafinen ilme / Musiikki
 
